@@ -17,11 +17,14 @@ When developing a machine learning model, datasets typically consist of input fe
    - **Features**: The model utilizes brightness temperature observations to predict surface precipitation rates at each pixel.
    - **Training**: The neural network is trained on a subset of TC PRIMED data, specifically focusing on oceanic regions to avoid complexities associated with land surfaces.
 
-3. **Challenges and Considerations**:
-   - **Data Limitations**: The sample size and choice of observation frequencies may impact the model's ability to generalize and capture high precipitation rates accurately.
-   - **Model Hyperparameters**: Adjustments to the number of hidden layers, nodes, activation functions, and other parameters are essential for improving model performance.
-   - **Normalization**: Normalizing input features to handle varying data scales and improve training stability.
+3. **Product**:
+   ![Precipitation Image](/img/precip.png)
 
 4. **Evaluation**:
    - **Performance**: The model's predictions are compared against GPROF data, with an emphasis on understanding the discrepancies, especially at higher precipitation rates.
    - **Application**: The trained model can be applied to TC PRIMED overpass data to make pixel-based predictions of surface precipitation rates.
+
+5. **Challenges and Considerations**:
+   - **Data Limitations**: The sample size and choice of observation frequencies may impact the model's ability to generalize and capture high precipitation rates accurately.
+   - **Model Hyperparameters**: Adjustments to the number of hidden layers, nodes, activation functions, and other parameters are essential for improving model performance.
+   - **Normalization**: Normalizing input features to handle varying data scales and improve training stability.
